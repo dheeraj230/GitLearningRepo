@@ -1,0 +1,49 @@
+<!-- Reverse The string in real time with Decrementing For loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+    <style>
+        #reverseTheName{
+            background-color: rgb(158, 158, 197);
+            color: rgb(255, 255, 0);
+            height: 30px;
+        }
+        #showData{
+            background-color: rgb(158, 158, 197);
+            color: rgb(255, 255, 0);
+            height: 30px;
+        }
+        h2{
+            background-color: rgb(180, 206, 180);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Reverse The String in Real time with Decrementing For Loop</h2>
+
+   <div class="container" style="text-align: center;">
+    <input type="text" name="" id="reverseTheName" placeholder="String" onkeyup="reverseString()">
+    <input type="text" name="" id="showData" placeholder="output">
+
+   </div>
+
+   <script>
+       function reverseString(){
+           var str=document.getElementById('reverseTheName').value;
+           //alert(str);
+
+           var newString="";
+           for(var i=str.length-1;i>=0;i--){
+               newString+=str[i];
+           }
+           document.getElementById('showData').value=newString;
+       }
+   </script>
+
+
+</body>
+</html>

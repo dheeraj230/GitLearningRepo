@@ -1,0 +1,39 @@
+
+
+<script>
+  // var d=new Date();
+  // document.write(d);
+  // console.log(d);
+
+  var d = new Date(2020, 11, 3); //it means 3rd december
+  document.write(d+"<br>");
+
+  var dateobj = new Date();
+  var month = dateobj.getUTCMonth() + 1;
+  var day = dateobj.getUTCDate();
+  var year = dateobj.getUTCFullYear();
+
+  document.write(day + "/" + month + "/" + year);
+  document.write("<br>");
+
+  //time
+  document.write("TIME <br>");
+  var d = new Date();
+  var n = d.getTime();
+  var hour = d.getHours();
+  var minute = d.getMinutes();
+  var second = d.getSeconds();
+  document.write(n + "<br>");
+
+  document.write(hour + "<br>");
+  document.write(minute + "<br>");
+  document.write(second + "<br>");
+
+  document.write(hour + ":" + minute + ":" + second);
+
+  //Dynamic clock or setinterval
+  //document.write("<br>");
+ // document.write("Dynamic clock <br>");
+
+  
+</script>

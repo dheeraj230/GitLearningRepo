@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval method</title>
+</head>
+<body>
+    <button onclick="clearInterval(clock)">Click me</button>
+    <p id="showClock"> </p>
+    <script>
+       // function mytime(){
+            var clock=setInterval(clocktiming,1000);//1000milii sec=1second
+            function clocktiming(){
+                var d=new Date();
+                var dheeraj=d.toLocaleTimeString();
+                //document.write(dheeraj);
+                document.getElementById('showClock').innerHTML=dheeraj;
+
+            }
+
+       // }
+        
+
+
+    </script>
+</body>
+</html>
